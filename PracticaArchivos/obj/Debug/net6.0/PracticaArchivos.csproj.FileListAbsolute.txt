@@ -1,0 +1,14 @@
+C:\Users\Dell\Desktop\CDA practicas\PracticaArchivos\PracticaArchivos\bin\Debug\net6.0\PracticaArchivos.exe
+C:\Users\Dell\Desktop\CDA practicas\PracticaArchivos\PracticaArchivos\bin\Debug\net6.0\PracticaArchivos.deps.json
+C:\Users\Dell\Desktop\CDA practicas\PracticaArchivos\PracticaArchivos\bin\Debug\net6.0\PracticaArchivos.runtimeconfig.json
+C:\Users\Dell\Desktop\CDA practicas\PracticaArchivos\PracticaArchivos\bin\Debug\net6.0\PracticaArchivos.dll
+C:\Users\Dell\Desktop\CDA practicas\PracticaArchivos\PracticaArchivos\bin\Debug\net6.0\PracticaArchivos.pdb
+C:\Users\Dell\Desktop\CDA practicas\PracticaArchivos\PracticaArchivos\obj\Debug\net6.0\PracticaArchivos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\Desktop\CDA practicas\PracticaArchivos\PracticaArchivos\obj\Debug\net6.0\PracticaArchivos.AssemblyInfoInputs.cache
+C:\Users\Dell\Desktop\CDA practicas\PracticaArchivos\PracticaArchivos\obj\Debug\net6.0\PracticaArchivos.AssemblyInfo.cs
+C:\Users\Dell\Desktop\CDA practicas\PracticaArchivos\PracticaArchivos\obj\Debug\net6.0\PracticaArchivos.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\CDA practicas\PracticaArchivos\PracticaArchivos\obj\Debug\net6.0\PracticaArchivos.dll
+C:\Users\Dell\Desktop\CDA practicas\PracticaArchivos\PracticaArchivos\obj\Debug\net6.0\refint\PracticaArchivos.dll
+C:\Users\Dell\Desktop\CDA practicas\PracticaArchivos\PracticaArchivos\obj\Debug\net6.0\PracticaArchivos.pdb
+C:\Users\Dell\Desktop\CDA practicas\PracticaArchivos\PracticaArchivos\obj\Debug\net6.0\PracticaArchivos.genruntimeconfig.cache
+C:\Users\Dell\Desktop\CDA practicas\PracticaArchivos\PracticaArchivos\obj\Debug\net6.0\ref\PracticaArchivos.dll
