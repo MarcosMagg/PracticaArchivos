@@ -10,22 +10,28 @@ namespace PracticaArchivos.Domain
 
         public class VentasMensuales
         {
-            public DateTime FechaDelInforme { get; set; }
-            public char CodigoDelVendedor { get; set; }
-            public int Venta { get; set; }
-            public bool VentaEmpresaGrande { get; set; }
+            public DateTime FechaProceso { get; set; }
+            public string CodVendedor { get; set; }
+            public decimal MontoVenta { get; set; }
+            public int Id { get; set; }
+            public bool McaEmpresaGrande { get; set; }
 
         }
+
 
         public class Rechazos
         {
-            public int IdRechazo { get; set; }
-            public string Motivo { get; set; }
+        public int Id { get; set; }
+        public string MotivoRechazos {  get; set; }
+
         }
+
 
         public class Parametria
         {
-            public DateTime Fecha { get; set; }
+        public int Id { get; set; }
+        public string? NombreRegla { get; set; }
+        public string? ValorRegla { get; set; }
         }
     }
 

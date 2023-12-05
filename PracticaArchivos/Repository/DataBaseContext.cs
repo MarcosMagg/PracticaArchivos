@@ -11,12 +11,13 @@ using PracticaArchivos.Repository;
 
 namespace PracticaArchivos.Repository
 {
-    internal class DataBaseContext : DbContext
+    public class DataBaseContext : DbContext
     {
-        public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
-        {
+        public DataBaseContext(DbContextOptions<DataBaseContext>option): base(option){ }    
 
-        }
+
+
+
 
         public DbSet<VentasMensuales> VentasMensuales { get; set; }
         public DbSet<Rechazos> Rechazos { get; set; }
@@ -30,28 +31,29 @@ namespace PracticaArchivos.Repository
                 entity.ToTable("ventas_mensuales");//asi se puede modificar el nombre
 
 
-                entity.HasKey(vm => new { vm.IdVendedor, vm.FechaInforme });//defino las llaves
 
-                entity.Property(vm => vm.CodigoDelVendedor).HasMaxLength(3).IsRequired();
-                entity.Property(vm => vm.FechaDelInforme).IsRequired();
-                entity.Property(vm => vm.Venta).HasColumnType("decimal(8,2)").IsRequired();
-                entity.Property(vm => vm.VentaEmpresaGrande).HasMaxLength(1).IsRequired();
+                entity.Property(vm => vm.Id).HasColumnName("id");
+                entity.Property(vm => vm.CodVendedor).HasColumnName("cod_vendedor");
+                entity.Property(vm => vm.MontoVenta).HasColumnName("monto_venta");
+                entity.Property(vm => vm.FechaProceso).HasColumnName("fecha_proceso");
+                entity.Property(vm => vm.McaEmpresaGrande).HasColumnName("mca_empresa_grande");
             });
 
             // Config Entity to the table "Rechazos"
             modelBuilder.Entity<Rechazos>(entity =>
             {
                 entity.ToTable("rechazos");
-                entity.HasKey(re => re.IdRechazo);
-                entity.Property(re => re.Motivo).HasMaxLength(100).IsRequired();
+                entity.Property(re => re.MotivoRechazos).HasColumnName("motivo_rechazo");
+                entity.Property(re => re.Id).HasColumnName("id"); 
             });
 
             // Config Entity to the table "Parametria"
             modelBuilder.Entity<Parametria>(entity =>
             {
                 entity.ToTable("parametria");
-                entity.HasKey(pa => pa.Fecha);
-                entity.Property(pa => pa.Fecha).IsRequired();
+                entity.Property(pa => pa.Id).HasColumnName("id");
+                entity.Property(pa => pa.NombreRegla).HasColumnName("nombre_regla");
+                entity.Property(pa => pa.ValorRegla).HasColumnName("valor_regla");
             });
 
             base.OnModelCreating(modelBuilder);
